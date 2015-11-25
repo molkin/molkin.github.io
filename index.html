@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Sergey Molkin</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet" type="text/css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+
+        body, html {
+            padding: 0;
+            margin: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .footer {
+            width: 100%;
+            background: white;
+        }
+        .footer .about-me {
+            width: 588px;
+            height: 250px;
+            padding-top: 55px;
+            box-sizing: border-box;
+            margin: auto;
+            text-align: left;
+            font-size: 50px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .about-me .name {
+            float: right;
+            margin-top: 25px;
+        }
+
+        .about-me .email {
+            font-size: 20px;
+            float: right;
+            margin-right: 2px;
+        }
+
+        .about-me .photo {
+            border-radius: 100%;
+            width: 150px;
+            height: 150px;
+            float: right;
+            margin-left: 25px;
+        }
+
+        .about-me .photo img {
+            width: 150px;
+            border-radius: 100%;
+            filter: blur(1px);
+            -webkit-filter: blur(1px);
+            -webkit-transition: all 1s;
+            transition: all 1s;
+        }
+
+        .about-me .photo img:hover {
+            -webkit-filter: blur(0);
+            filter: blur(0);
+        }
+
+        .projects {
+            width: 100%;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background: url(paper_fibers.png);
+        }
+
+        .project {
+            width: 660px;
+            margin: auto;
+            margin-bottom: 100px;
+            background: white;
+        }
+
+        .project .header {
+            position: relative;
+        }
+
+        .project .header img {
+            width: 100%;
+        }
+
+        .project .header .text {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            margin-top: -40px;
+            color: white;
+            text-align: center;
+            font-weight: 900;
+            font-size: 70px;
+            text-transform: uppercase;
+        }
+
+        .project .body {
+            padding: 25px;
+        }
+
+        .project .description {
+            font-size: 19px;
+            line-height: 26px;
+        }
+
+        .project .tech-used {
+            list-style: none;
+            margin: 0;
+            margin-top: 25px;
+            padding: 0;
+        }
+
+        .project .tech-used li {
+            display: inline-block;
+            background: #F8F8F8;
+            padding: 5px 10px;
+            margin-right: 7px;
+            cursor: default;
+        }
+
+        .project .thumbs {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 25px
+        }
+
+        .project .thumbs li {
+            display: inline-block;
+            margin-right: 7px;
+            cursor: pointer;
+            padding: 4px;
+            background: #F8F8F8;
+        }
+
+        .project .thumbs li img {
+            width: 104px;
+            display: block;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        .project .thumb-fullview {
+            padding: 10px;
+            box-sizing: border-box;
+            display: none;
+        }
+
+        .project .thumb-fullview img {
+            width: 640px;
+            height: 320px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="projects">
+
+        <div class="project">
+            <div class="header">
+                <img src="dbexplorer.png" />
+                <div class="text">DB Explorer</div>
+            </div>
+            <div class="body">
+                <div class="description">
+                    A tool for quick database lookups in CLI style with autosuggest and simple query syntax.
+                    <br/>Quickly jump from an id / column of ids from one table to another table filtered by the selected id(s).
+                </div>
+                <ul class="tech-used">
+                    <li>React</li>
+                    <li>Flux</li>
+                    <li>Alt.js</li>
+                    <li>ES6</li>
+                    <li>Babel</li>
+                    <li>LESS</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <ul class="thumbs">
+                    <li><img src="dbexplorer1.jpg" /></li>
+                    <li><img src="dbexplorer2.jpg" /></li>
+                    <li><img src="dbexplorer3.jpg" /></li>
+                    <li><img src="dbexplorer4.jpg" /></li>
+                    <li><img src="dbexplorer5.jpg" /></li>
+                </ul>
+            </div>
+            <div class="footer thumb-fullview"></div>
+        </div>
+
+        <div class="project">
+            <div class="header">
+                <img src="tophotels.png" />
+                <div class="text">Tophotels</div>
+            </div>
+            <div class="body">
+                <div class="description">
+                    Russian Tripadvisor and Booking.com. A project of the Russian company Lightsoft.ru which
+                    controls ~80% of the market (IT solutions in tourism).
+                    <br/>
+                    I worked on the tour search frontend and the hotel review system enhancements.
+                </div>
+                <ul class="tech-used">
+                    <li>PHP</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>Backbone.js</li>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                </ul>
+                <ul class="thumbs">
+                    <li><img src="tophotels1.jpg" /></li>
+                    <li><img src="tophotels2.jpg" /></li>
+                    <li><img src="tophotels3.jpg" /></li>
+                </ul>
+            </div>
+            <div class="footer thumb-fullview"></div>
+        </div>
+
+        <div class="project">
+            <div class="header">
+                <img src="keenglish.png" />
+                <div class="text">Keenglish</div>
+            </div>
+            <div class="body">
+                <div class="description">
+                    A continuation of the Malibu project described below. <br/>Redesigned, simplified, crossplatform version of the idea.
+                </div>
+                <ul class="tech-used">
+                    <li>Phonegap</li>
+                    <li>Javascript</li>
+                </ul>
+                <ul class="thumbs">
+                    <li><img src="keenglish1.jpg" /></li>
+                    <li><img src="keenglish2.jpg" /></li>
+                    <li><img src="keenglish3.jpg" /></li>
+                    <li><img src="keenglish4.jpg" /></li>
+                </ul>
+            </div>
+            <div class="footer thumb-fullview"></div>
+        </div>
+
+        <div class="project">
+            <div class="header">
+                <img src="malibu.png" />
+                <div class="text">Malibu</div>
+            </div>
+            <div class="body">
+                <div class="description">
+                    A mixture of Pinterest and Imgur for learning English.
+                    <br/>
+                    It's a pin board filled with entertaining posts translated to Russian.
+                    <br/>The killer feature of this project is a highlighter for new words and phrases
+                    allowing you to save them and train afterwards:
+                    </br>The same post is shown but previously highlighted part is replaced
+                    with an input box so you have to recall the missing part based on the context and visual associations and type it in.
+                    <br/>
+                    An exciting idea which received a huge amount of positive feedback but unfortunately we haven't found a way
+                    to make a business out of it.
+                    <br/>
+                </div>
+                <ul class="tech-used">
+                    <li>PHP</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>Google APIs</li>
+                    <li>Yandex APIs</li>
+                </ul>
+                <ul class="thumbs">
+                    <li><img src="malibu1.jpg" /></li>
+                    <li><img src="malibu2.jpg" /></li>
+                    <li><img src="malibu3.jpg" /></li>
+                    <li><img src="malibu4.jpg" /></li>
+                </ul>
+            </div>
+            <div class="footer thumb-fullview"></div>
+        </div>
+
+        <div class="project">
+            <div class="header">
+                <img src="pikabu.png" />
+                <div class="text">Pikabu</div>
+            </div>
+            <div class="body">
+                <div class="description">
+                    Russian Reddit with over 800 thousand unique visitors per day.
+                    <br/>My friend's project.
+                    <br/>I worked with two other developers on almost every side of it.
+                </div>
+                <ul class="tech-used">
+                    <li>PHP</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                </ul>
+                <ul class="thumbs">
+                    <li><img src="pikabu1.jpg" /></li>
+                    <li><img src="pikabu2.jpg" /></li>
+                </ul>
+            </div>
+            <div class="footer thumb-fullview"></div></div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="about-me">
+            <div class="photo">
+                <img src="pic.png">
+            </div>
+            <div class="name">Serge.Molkin</div>
+            <div class="email">@gmail.com</div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+        $('.project .thumbs').on('click', 'li', function(){
+            var $project = $(this).closest('.project');
+            $project.find('.thumb-fullview').html('<img src="' + $(this).find('img').attr('src') + '" />').show();
+        });
+    </script>
+
+</body>
+</html>
