@@ -28,8 +28,28 @@
         }
 
         .centered-container {
-            width: 670px;
+            width: 100%;
+            max-width: 670px;
             margin: auto;
+        }
+
+        .my-info {
+            display: flex;
+            flex-flow: column;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 670px) {
+            .my-info {
+                flex-flow: row;
+                padding: 0;
+            }
+        }
+
+        .text-info {
+            width: 100%;
+            max-width: 465px;
         }
 
         h1 {
@@ -49,26 +69,18 @@
             height: 180px;
             background: url(pic.png);
             background-size: cover;
-            transition: all 1s ease;
             -webkit-filter: grayscale(1);
             -moz-filter: grayscale(1);
             filter: grayscale(1);
             display: inline-block;
             margin: 25px 25px 25px 0;
-            float: left;
-        }
-
-        .photo:hover {
-            -webkit-filter: grayscale(0);
-            -moz-filter: grayscale(0);
-            filter: grayscale(0);
         }
 
         .projects {
             width: 100%;
             padding-top: 50px;
             padding-bottom: 100px;
-            background: url(paper_fibers.png);
+            background-color: #E6E9E9;
         }
 
         .projects-label {
@@ -80,7 +92,8 @@
         }
 
         .project {
-            width: 670px;
+            width: 100%;
+            max-width: 670px;
             margin: auto;
             margin-bottom: 100px;
             background: white;
@@ -89,12 +102,12 @@
         .project-header {
             position: relative;
             width: 100%;
-            height: 330px;
-            line-height: 330px;
+            height: 250px;
+            line-height: 250px;
             color: white;
             text-align: center;
             font-weight: 900;
-            font-size: 70px;
+            font-size: 60px;
             text-transform: uppercase;
             background-size: cover;
             font-family: 'Source Sans Pro', sans-serif;
@@ -120,7 +133,7 @@
             display: inline-block;
             background: #F8F8F8;
             padding: 5px 10px;
-            margin-right: 7px;
+            margin: 0 7px 10px 0;
             cursor: default;
         }
 
@@ -128,22 +141,36 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            margin-top: 25px
+            margin-top: 15px
         }
 
         .project-thumbs li {
             display: inline-block;
-            margin-right: 7px;
             cursor: pointer;
-            padding: 4px;
+            padding: 8px;
             background: #F8F8F8;
+            width: calc((100% * (1/3)) - 4px - 5px);
+            box-sizing: border-box;
+            margin: 0 7px 10px 0;
+        }
+        .project-thumbs li:nth-child(3n) {
+            margin-right: 0;
         }
 
         .project-thumbs li img {
-            width: 104px;
+            width: 100%;
             display: block;
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(1);
+            filter: grayscale(1);
         }
 
+        .project-da .project-header {
+            background-image: url(dev.png);
+        }
+        .project-gifster .project-header {
+            background-image: url(gifster.png);
+        }
         .project-dbexplorer .project-header {
             background-image: url(dbexplorer.png);
         }
@@ -165,6 +192,21 @@
         .external-links-container {
             display: flex;
             justify-content: space-around;
+            align-items: center;
+            height: 120px;
+        }
+
+        .external-links-container img {
+            width: 64px;
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+
+        .external-links-container img:hover {
+            -webkit-filter: grayscale(0);
+            -moz-filter: grayscale(0);
+            filter: grayscale(0);
         }
 
     </style>
@@ -173,19 +215,21 @@
 <body>
 
     <div class="header">
-        <div class="centered-container">
+        <div class="centered-container my-info">
             <div class="photo"></div>
-            <h1>I&rsquo;m Yury, <br/>a user experience designer<br/> and web developer.</h1>
-            <p>I specialize in merging visual design and technology to make products that delight users on desktop and mobile devices.</p>
+            <div class="text-info">
+                <h1>I&rsquo;m Yury, <br/>a user experience designer<br/> and web developer.</h1>
+                <p>I specialize in merging visual design and technology to make products that delight users on desktop and mobile devices.</p>
+            </div>
         </div>
     </div>
 
     <div class="projects">
 
-        <div class="projects-label">Some of my projects &darr;</div>
+        <div class="projects-label">Some of the projects I worked on &darr;</div>
 
-        <div class="project project-dbexplorer">
-            <div class="project-header">DB Explorer</div>
+        <div class="project project-da">
+            <div class="project-header">DeviantArt</div>
             <div class="project-body">
                 <div class="project-description">
                     A tool for quick database lookups in CLI style with autosuggest and simple query syntax.
@@ -231,6 +275,77 @@
                     <li><img src="tophotels1.jpg" /></li>
                     <li><img src="tophotels2.jpg" /></li>
                     <li><img src="tophotels3.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project project-pikabu">
+            <div class="project-header">Pikabu</div>
+            <div class="project-body">
+                <div class="project-description">
+                    Russian Reddit with over 800 thousand unique visitors per day.
+                    <br/>My friend's project.
+                    <br/>I worked with two other developers on almost every side of it.
+                </div>
+                <ul class="project-tech-used">
+                    <li>PHP</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                </ul>
+                <ul class="project-thumbs">
+                    <li><img src="pikabu1.jpg" /></li>
+                    <li><img src="pikabu2.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project project-gifster">
+            <div class="project-header">Gifster</div>
+            <div class="project-body">
+                <div class="project-description">
+                    Russian Tripadvisor and Booking.com. A project of the Russian company Lightsoft.ru which
+                    controls ~80% of the market (IT solutions in tourism).
+                    <br/>
+                    I worked on the tour search frontend and the hotel review system enhancements.
+                </div>
+                <ul class="project-tech-used">
+                    <li>PHP</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>Backbone.js</li>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                </ul>
+                <ul class="project-thumbs">
+                    <li><img src="tophotels1.jpg" /></li>
+                    <li><img src="tophotels2.jpg" /></li>
+                    <li><img src="tophotels3.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project project-dbexplorer">
+            <div class="project-header">DB Explorer</div>
+            <div class="project-body">
+                <div class="project-description">
+                    A tool for quick database lookups in CLI style with autosuggest and simple query syntax.
+                    <br/>Quickly jump from an id / column of ids from one table to another table filtered by the selected id(s).
+                </div>
+                <ul class="project-tech-used">
+                    <li>React</li>
+                    <li>Flux</li>
+                    <li>Alt.js</li>
+                    <li>ES6</li>
+                    <li>Babel</li>
+                    <li>LESS</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <ul class="project-thumbs">
+                    <li><img src="dbexplorer1.jpg" /></li>
+                    <li><img src="dbexplorer2.jpg" /></li>
+                    <li><img src="dbexplorer3.jpg" /></li>
+                    <li><img src="dbexplorer4.jpg" /></li>
+                    <li><img src="dbexplorer5.jpg" /></li>
                 </ul>
             </div>
         </div>
@@ -286,31 +401,14 @@
             </div>
         </div>
 
-        <div class="project project-pikabu">
-            <div class="project-header">Pikabu</div>
-            <div class="project-body">
-                <div class="project-description">
-                    Russian Reddit with over 800 thousand unique visitors per day.
-                    <br/>My friend's project.
-                    <br/>I worked with two other developers on almost every side of it.
-                </div>
-                <ul class="project-tech-used">
-                    <li>PHP</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                </ul>
-                <ul class="project-thumbs">
-                    <li><img src="pikabu1.jpg" /></li>
-                    <li><img src="pikabu2.jpg" /></li>
-                </ul>
-            </div>
-        </div>
-
     </div>
 
     <div class="footer">
         <div class="centered-container external-links-container">
-            <a href=""></a>
+            <a href="http://www.linkedin.com/in/yury-nedomolkin"><img src="linkedin.png" /></a>
+            <a href="https://www.facebook.com/nedomolkin"><img src="facebook.png" /></a>
+            <a href="https://bitbucket.org/yury-n/"><img src="bitbucket.png" /></a>
+            <a href="http://yury-n.deviantart.com/"><img src="da1.png" /></a>
         </div>
     </div>
 
