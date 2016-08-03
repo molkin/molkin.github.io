@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5edfb6d-083d-44e4-a3bd-4e4771d212a7" name="Default" comment="" />
+    <list default="true" id="c5edfb6d-083d-44e4-a3bd-4e4771d212a7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backgrounds/dbexplorer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backgrounds/dev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backgrounds/gifster.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backgrounds/keenglish.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backgrounds/malibu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backgrounds/pikabu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backgrounds/tophotels.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dbexplorer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dbexplorer1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dbexplorer2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dbexplorer3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dbexplorer4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dbexplorer5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gifster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/keenglish.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/keenglish1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/keenglish2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/keenglish3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/keenglish4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/malibu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/malibu1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/malibu2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/malibu3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/malibu4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_fibers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pikabu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pikabu1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pikabu2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/da/large/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tophotels.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tophotels1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tophotels2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tophotels3.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshots/da/large/12.png" afterPath="$PROJECT_DIR$/screenshots/da/large/12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshots/da/large/8.png" afterPath="$PROJECT_DIR$/screenshots/da/large/8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <ignored path="molkin.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,13 +59,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="212" column="9" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7zpACgQvLAM.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/7zpACgQvLAM.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -34,13 +81,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1850" />
@@ -95,11 +148,6 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -110,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470221420827</updated>
-      <workItem from="1470221422046" duration="418000" />
+      <workItem from="1470221422046" duration="2201000" />
     </task>
     <task id="LOCAL-00001" summary="Ignore .idea files">
       <created>1470221651503</created>
@@ -119,11 +167,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470221651503</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Put icons in their own folder">
+      <created>1470222320246</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1470222320246</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="418000" />
+    <option name="totallyTimeSpent" value="2201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1850" height="1057" extended-state="6" />
@@ -133,7 +188,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6390532" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -157,17 +212,39 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Ignore .idea files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ignore .idea files" />
+    <MESSAGE value="Put icons in their own folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Put icons in their own folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/7zpACgQvLAM.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="212" column="9" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
           <folding />
         </state>
       </provider>
