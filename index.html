@@ -235,6 +235,23 @@
             filter: grayscale(0);
         }
 
+        .show-full-list {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            width: 100%;
+            font-size: 17px;
+            padding: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #929292;
+            margin-bottom: 40px;
+        }
+
+        .show-full-list:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 
@@ -259,23 +276,26 @@
             <div class="project-body">
                 <div class="project-description">
                     At DeviantArt I had a great experience working with talented people truly passionate about their work. I collaborated on a wide range of projects with people from almost all of the departments of the company.
+                    <br/><br/>
+                    Here're some of the things I did for DA:
                     <ul>
-                        <li>redesigned D.A. films to use HTML5 technologies for the player and a thirdparty (zencoder) API for video transcoding. Apart from the standard features, the player supported timecode annotations (in soundcloud style) with threaded comments and highlighting places with bigger number of comments by opaqueness of annotation marks on the timeline</li>
+                        <li>redesigned DA films to use HTML5 technologies for the player and a thirdparty (zencoder) API for video transcoding<span style="display:none">. Apart from the standard features, the player supported timecode annotations (in soundcloud style) with threaded comments and highlighting places with bigger number of comments by opaqueness of annotation marks on the timeline</span></li>
                         <li>integrated Avalara services for sales taxes automation</li>
-                        <li>maintained an in-house accounting system and worked on redesigning/improving almost every aspect of the checkout process</li>
-                        <li>maintained and extended an in-house discount system (a complex system allowing to simultaneously run discount campaigns of different types e.g. merchant-level discount, product-level discount, a few conditional discounts "buy N items of smthg, get % free of smthgs else" and figure out the most beneficial combination for a user when there're multiple applicable discounts on the same level)</li>
-                        <li>created a separate accounting system for artist profits (profits that are received from selling prints, digital goods, commissioning) a double-entry bookkeeping system based on the golden accounting rules. covered with unit and integration tests. well documented. with a variety of accounting reports and csv exports, making our financial audit on this system a breeze, making money movements very transparent which was beneficial for fraud detection</li>
-                        <li>helped with a painful audit of the legacy in-house accounting systems</li>
+                        <li>maintained in-house accounting system and worked on redesigning/improving almost every aspect of the checkout process</li>
+                        <li>maintained and extended in-house discount system <span style="display:none">(a complex system allowing to simultaneously run discount campaigns of different types e.g. merchant-level discount, product-level discount, a few conditional discounts "buy N items of smthg, get % free of smthgs else" and figure out the most beneficial combination for a user when there're multiple applicable discounts on the same level)</span></li>
+                        <li>developed an accounting system for artist profits <span style="display:none">(profits that are received from selling prints, digital goods, commissioning) a double-entry bookkeeping system based on the golden accounting rules. covered with unit and integration tests. well documented. with a variety of accounting reports and csv exports, making our financial audit on this system a breeze, making money movements very transparent which was beneficial for fraud detection</span></li>
+                        <li style="display:none">helped with a painful audit of the legacy in-house accounting systems</li>
                         <li>integrated PayPal MassPay API for PayPal withdrawals</li>
-                        <li>automated cheque payments</li>
+                        <li style="display:none">automated cheque payments</li>
                         <li>helped conducting sales, promos, direct advertising</li>
-                        <li>deployed our user profits and checkout systems for Dreamup (a D.A.'s attempt at creating a freelance marketplace for designers)</li>
-                        <li>made multiple enhancements to the homepage browse</li>
+                        <li>deployed our user profits and checkout systems for Dreamup <span style="display:none">(a DA's attempt at creating a freelance marketplace for designers)</span></li>
+                        <li style="display:none">made multiple enhancements to the homepage browse</li>
                         <li>worked within a group of 4 developers on the Today page (a semi-automated section controlled through a CMS we built)</li>
-                        <li>integrated deep learning results for watch recommendations (data passed through S3)</li>
-                        <li>participated in development of the new watch section (on the screenshots below in new brand colors) implemented a few widgets there in React/Flux</li>
+                        <li style="display:none">integrated deep learning results for watch recommendations (data passed through S3)</li>
+                        <li>participated in development of the new watch section (on the screenshots below in new brand colors) implemented a few widgets for it in React/Flux</li>
                         <li>worked with 2 other devs at our HQ on the frontend implementation of the new image grid using ES2015. can be seen here: <a href="http://www.deviantart.com/browse/all/">http://www.deviantart.com/browse/all/</a></li>
                     </ul>
+                    <a href="javacript:void(0)" class="show-full-list">Show full list & more info</a>
                 </div>
                 <ul class="project-tech-used">
                     <li>LAMP</li>
@@ -513,7 +533,8 @@
             <div class="project-header">DB Explorer</div>
             <div class="project-body">
                 <div class="project-description">
-                    While working on accounting side of things at DeviantArt I had to constantly jump between mysql tables especially when needed to investigate what happened to an order/transaction and why we ended in the current state.
+                    While working on accounting side of things at DeviantArt I had to constantly jump between mysql tables especially when needed to investigate what happened to an order/transaction and why we ended in a particular state.
+                    <br/>
                     Such a task would have me start with looking up orders by order group id (what looks like a single order to the user might contain multiple orders that go to different manufacturers) then getting order items from a db table that doesn't have self-speaking info but instead ids linking to auxiliary tables e.g. itemtypeid, merchantid, productid, subproductid.
                     <br/>
                     So I created a tool for quick database lookups in CLI style with autosuggest and simple query syntax which allows to quickly jump from an (id|column of ids) from one table to another table filtered by the selected id(s).
@@ -708,6 +729,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <script>
+
+        $(document).on('click', '.show-full-list', function() {
+            $(this).parent().find('ul *:hidden').show();
+            $(this).hide();
+        });
+
         var initPhotoSwipeFromDOM = function(gallerySelector) {
 
             // parse slide data (url, title, size ...) from DOM elements
